@@ -1,0 +1,66 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 13px;
+  background-color: var(--background-white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+  .nameImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .nameFilm {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+    flex-grow: 1;
+  }
+  .boxTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tag {
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgb(72, 211, 165, 0.1);
+      color: rgb(72, 211, 165);
+    }
+    .tag-year {
+      background-color: rgba(43, 92, 226, 0.1);
+      color: rgb(62, 109, 236);
+    }
+  }
+  .boxButton {
+    margin-bottom: 25px;
+    .watch {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 7px 15px;
+      background-color: rgba(43, 92, 226, 0.1);
+      color: rgb(62, 109, 236);
+      outline: none;
+      border: none;
+      font-weight: 700;
+      font-size: 16px;
+      p {
+        margin: 0;
+        margin-right: 10px;
+      }
+      ion-icon {
+        font-size: 24px;
+      }
+    }
+  }
+}
